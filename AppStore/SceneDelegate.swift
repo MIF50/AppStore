@@ -28,8 +28,8 @@ class BaseTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let redViewController = UIViewController()
-        redViewController.view.backgroundColor = .red
+        let navSearchController = UINavigationController(rootViewController: SearchViewController())
+        navSearchController.tabBarItem.title = "Search"
         
         let blueViewController = UIViewController()
         blueViewController.view.backgroundColor = .blue
@@ -38,10 +38,18 @@ class BaseTabBarController: UITabBarController {
         purpleViewController.view.backgroundColor = .purple
         
         viewControllers = [
-            redViewController,
+            navSearchController,
             blueViewController,
             purpleViewController
         ]
+    }
+}
+
+class SearchViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .red
     }
 }
 
