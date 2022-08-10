@@ -13,7 +13,7 @@
 		B553674D28A359F20024AC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B553674B28A359F20024AC53 /* Main.storyboard */; };
 		B553674F28A359F50024AC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B553674E28A359F50024AC53 /* Assets.xcassets */; };
 		B553675228A359F50024AC53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B553675028A359F50024AC53 /* LaunchScreen.storyboard */; };
-		B553675D28A359F50024AC53 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553675C28A359F50024AC53 /* AppStoreTests.swift */; };
+		B553677628A35CD70024AC53 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553677528A35CD70024AC53 /* AppDelegateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		B553675128A359F50024AC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B553675328A359F50024AC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B553675828A359F50024AC53 /* AppStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B553675C28A359F50024AC53 /* AppStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
+		B553677528A35CD70024AC53 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		B553675B28A359F50024AC53 /* AppStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				B553675C28A359F50024AC53 /* AppStoreTests.swift */,
+				B553677528A35CD70024AC53 /* AppDelegateTests.swift */,
 			);
 			path = AppStoreTests;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B553675D28A359F50024AC53 /* AppStoreTests.swift in Sources */,
+				B553677628A35CD70024AC53 /* AppDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
