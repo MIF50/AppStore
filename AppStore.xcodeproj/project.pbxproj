@@ -78,8 +78,7 @@
 		B553674428A359F20024AC53 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
-				B553674528A359F20024AC53 /* AppDelegate.swift */,
-				B553674728A359F20024AC53 /* SceneDelegate.swift */,
+				B57B8DD228A3F5CD00D2483F /* Composition Root */,
 				B553674928A359F20024AC53 /* ViewController.swift */,
 				B553674E28A359F50024AC53 /* Assets.xcassets */,
 				B553675028A359F50024AC53 /* LaunchScreen.storyboard */,
@@ -91,10 +90,27 @@
 		B553675B28A359F50024AC53 /* AppStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				B553677528A35CD70024AC53 /* AppDelegateTests.swift */,
-				B553677728A35EED0024AC53 /* SceneDelegateTests.swift */,
+				B57B8DD328A3F5E500D2483F /* Composition Root */,
 			);
 			path = AppStoreTests;
+			sourceTree = "<group>";
+		};
+		B57B8DD228A3F5CD00D2483F /* Composition Root */ = {
+			isa = PBXGroup;
+			children = (
+				B553674728A359F20024AC53 /* SceneDelegate.swift */,
+				B553674528A359F20024AC53 /* AppDelegate.swift */,
+			);
+			path = "Composition Root";
+			sourceTree = "<group>";
+		};
+		B57B8DD328A3F5E500D2483F /* Composition Root */ = {
+			isa = PBXGroup;
+			children = (
+				B553677728A35EED0024AC53 /* SceneDelegateTests.swift */,
+				B553677528A35CD70024AC53 /* AppDelegateTests.swift */,
+			);
+			path = "Composition Root";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
