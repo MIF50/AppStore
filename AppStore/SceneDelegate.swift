@@ -14,11 +14,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
+        configureWindow()
     }
     
     func configureWindow() {
-        window?.rootViewController = ViewController()
+        window?.rootViewController = BaseTabBarController()
         window?.makeKeyAndVisible()
+    }
+}
+
+class BaseTabBarController: UITabBarController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let redViewController = UIViewController()
+        redViewController.view.backgroundColor = .red
+        
+        let blueViewController = UIViewController()
+        blueViewController.view.backgroundColor = .blue
+        
+        let purpleViewController = UIViewController()
+        purpleViewController.view.backgroundColor = .purple
+        
+        viewControllers = [
+            redViewController,
+            blueViewController,
+            purpleViewController
+        ]
     }
 }
 
