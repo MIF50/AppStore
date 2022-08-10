@@ -15,6 +15,7 @@
 		B553677628A35CD70024AC53 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553677528A35CD70024AC53 /* AppDelegateTests.swift */; };
 		B553677828A35EED0024AC53 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553677728A35EED0024AC53 /* SceneDelegateTests.swift */; };
 		B57B8DD528A3FACA00D2483F /* SFSymbole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B8DD428A3FACA00D2483F /* SFSymbole.swift */; };
+		B57B8DDB28A42B4A00D2483F /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B8DDA28A42B4A00D2483F /* SearchViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		B553677528A35CD70024AC53 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		B553677728A35EED0024AC53 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		B57B8DD428A3FACA00D2483F /* SFSymbole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbole.swift; sourceTree = "<group>"; };
+		B57B8DDA28A42B4A00D2483F /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B57B8DD328A3F5E500D2483F /* Composition Root */,
+				B57B8DD828A42B2100D2483F /* UI */,
 			);
 			path = AppStoreTests;
 			sourceTree = "<group>";
@@ -128,6 +131,22 @@
 			isa = PBXGroup;
 			children = (
 				B553674928A359F20024AC53 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B57B8DD828A42B2100D2483F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B57B8DD928A42B2900D2483F /* Search */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B57B8DD928A42B2900D2483F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B57B8DDA28A42B4A00D2483F /* SearchViewControllerTests.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -245,6 +264,7 @@
 			files = (
 				B553677628A35CD70024AC53 /* AppDelegateTests.swift in Sources */,
 				B553677828A35EED0024AC53 /* SceneDelegateTests.swift in Sources */,
+				B57B8DDB28A42B4A00D2483F /* SearchViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
