@@ -17,6 +17,7 @@
 		B57B8DD528A3FACA00D2483F /* SFSymbole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B8DD428A3FACA00D2483F /* SFSymbole.swift */; };
 		B57B8DDB28A42B4A00D2483F /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B8DDA28A42B4A00D2483F /* SearchViewControllerTests.swift */; };
 		B5B0D4CE28D64222003C57FE /* UIController+Simulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B0D4CD28D64222003C57FE /* UIController+Simulate.swift */; };
+		B5B0D4D128D6434C003C57FE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B0D4D028D6434C003C57FE /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B57B8DD428A3FACA00D2483F /* SFSymbole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbole.swift; sourceTree = "<group>"; };
 		B57B8DDA28A42B4A00D2483F /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
 		B5B0D4CD28D64222003C57FE /* UIController+Simulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIController+Simulate.swift"; sourceTree = "<group>"; };
+		B5B0D4D028D6434C003C57FE /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		B553675B28A359F50024AC53 /* AppStoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5B0D4CF28D64345003C57FE /* Helpers */,
 				B57B8DD328A3F5E500D2483F /* Composition Root */,
 				B57B8DD828A42B2100D2483F /* UI */,
 			);
@@ -158,6 +161,14 @@
 			isa = PBXGroup;
 			children = (
 				B5B0D4CD28D64222003C57FE /* UIController+Simulate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B5B0D4CF28D64345003C57FE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5B0D4D028D6434C003C57FE /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -277,6 +288,7 @@
 				B553677828A35EED0024AC53 /* SceneDelegateTests.swift in Sources */,
 				B57B8DDB28A42B4A00D2483F /* SearchViewControllerTests.swift in Sources */,
 				B5B0D4CE28D64222003C57FE /* UIController+Simulate.swift in Sources */,
+				B5B0D4D128D6434C003C57FE /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

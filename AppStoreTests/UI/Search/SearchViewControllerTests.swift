@@ -52,7 +52,8 @@ class SearchViewControllerTests: XCTestCase {
         let loader = LoaderSpy()
         let sut = SearchViewController(loader: loader)
         sut.loadViewIfNeeded()
-        
+        trackForMemoryLeaks(loader,file: file,line: line)
+        trackForMemoryLeaks(sut,file: file,line: line)
         return (sut,loader)
     }
     
