@@ -7,7 +7,9 @@
 
 import XCTest
 
-private class SearchViewController: UIViewController {
+private class SearchViewController: UIViewController, UISearchBarDelegate {
+    
+    private(set) lazy var searchViewController = UISearchController()
     
     private var loader: SearchViewControllerTests.LoaderSpy?
     
@@ -16,22 +18,57 @@ private class SearchViewController: UIViewController {
         self.loader = loader
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        searchViewController.searchBar.delegate = self
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        loader?.loadSearch()
+    }
 }
 
 class SearchViewControllerTests: XCTestCase {
     
     func test_init_doesNotLoadSearch() {
-        let loader = LoaderSpy()
-        _ = SearchViewController(loader: loader)
+        let (_ ,loader) = makeSUT()
         
         XCTAssertEqual(loader.loadCallCount, 0)
+    }
+    
+    func test_userTyping_loadsSearch() {
+        let (sut, loader) = makeSUT()
+        
+        sut.simulateUserSearch("any query")
+        
+        XCTAssertEqual(loader.loadCallCount, 1)
     }
     
     
     //MARK: - Helper
     
+    private func makeSUT(file: StaticString = #file,line: UInt = #line) -> (sut: SearchViewController,loader: LoaderSpy) {
+        let loader = LoaderSpy()
+        let sut = SearchViewController(loader: loader)
+        sut.loadViewIfNeeded()
+        
+        return (sut,loader)
+    }
+    
     class LoaderSpy {
         private(set) var loadCallCount: Int = 0
+        
+        func loadSearch() {
+            loadCallCount += 1
+        }
     }
 
+}
+
+private extension SearchViewController {
+    
+    func simulateUserSearch(_ query: String) {
+        searchViewController.searchBar.delegate?.searchBar?(searchViewController.searchBar, textDidChange: query)
+    }
 }
